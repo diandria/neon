@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+body {
+  background: rgb(31,192,236);
+}
+
+/* MENU */
+
+
+.rodape,
 .menu {  
   color: rgb(223,255,255);
   display: flex;
@@ -26,20 +34,32 @@
   width: auto;  
 }
 
-.menuItemMeuNeon {
-  justify-content: left; 
-}
-
 .menuItem img {
   width: 5%;
 }
+
+
+/*ICONE*/
+
+.icon {
+  background-color:rgb(0,165,239) ;
+  border:2px solid #ffffff;
+  border-radius: 50%;
+  font-weight: bolder;
+  padding: 12px;
+}
+
+.meuNeon {
+  display: flex;
+}
+
+/*Meu neon*/
 
 .neonMais{
   border: 1px solid rgb(31,192,236);
   border-radius: 20px;
   color: rgb(31,192,236);
   font-size: 8pt;
-  /* superior | direita | inferior | esquerda */
   margin-left: 15px;
   padding: 5px 7px 5px 7px;
 }
@@ -51,23 +71,28 @@
   padding: 0;
 }
 
-section {
+.neonMais div span {
+  padding-bottom: 10px;
+}
+
+.menu section {
   height: auto;
   width: auto; 
+  box-shadow: 0 10px 20px black;
+  z-index: 1;
 }
     
-article {
+.menu article {
   height: calc(100vh/6.5);
 }
 
-article i {
-  font-size: 14pt;
-  padding-right: 10px;
+.menu article h1 {
+  font-size: 13pt;
 }
 
-img{
-  height: 100px;
-  width:100px
+.menu article i {
+  font-size: 14pt;
+  padding-right: 10px;
 }
 
 @font-face {
@@ -75,6 +100,59 @@ img{
 	src: url('../fonts/AvertaDemoPECuttedDemo-Regular.otf');
 }
 
+/*FOOTER*/
+.rodape h1, p{
+  text-align: center;
+}
+
+.rodape h1{
+  margin-top: 2em;
+}
+
+.rodape p {
+  /* superior | direita | inferior | esquerda */
+  margin: .8em 40px 2em 40px;
+}
+
+.button {
+  margin: 0 auto 20px auto;
+}
+
+.button button {
+  background-color: rgb(255,255,255);
+  border: none;
+  border-radius: 20px;
+  color:  rgb(0, 134, 236);
+  font-family: averta;
+  font-size: 11pt;
+  font-weight: bold;
+  padding: 10px 70px;
+  align-items: center;
+}
+
+.button button:hover {
+  background-color: rgb(117, 211, 255);
+}
+
+/*IMAGEM*/
+
+.imagem {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color:  rgb(255,255,255);
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+.imagem section {
+ border-radius: 50%;
+}
+
+.imagem img {
+  margin: 20px 0;
+  width: 150px;
+}
 
 /* background dos items menu */
 
@@ -101,6 +179,3 @@ img{
 .verdeEscuro {
   background-color: rgb(0,130,130);
 }
-
-
-
