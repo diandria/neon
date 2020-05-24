@@ -84,6 +84,10 @@ section.dados button {
     padding: 9px 37px;
 }
 
+section.dados button:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
 /* SESSÃO MINHA CONTA e INFORMAÇÕES */
 
 a {
